@@ -38,6 +38,7 @@ export default {
   */
   buildModules: [
     '@nuxtjs/vuetify',
+    '@nuxtjs/axios'
   ],
   /*
   ** Nuxt.js modules
@@ -70,5 +71,10 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+
+  server: {
+    port: 4003, // デフォルト: 3000
+    host: '0.0.0.0' // デフォルト: localhost
   }
 }

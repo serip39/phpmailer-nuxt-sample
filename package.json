@@ -2,6 +2,9 @@
   "name": "phpmailer-nuxt-sample",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -9,6 +12,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.11.0",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {
