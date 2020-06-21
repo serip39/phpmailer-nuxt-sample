@@ -7,12 +7,15 @@
   },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "cross-env NODE_ENV=develop nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "copy": "rm -rf ./public_html/_nuxt && cp -r ./dist/ ./public_html/",
+    "apache": "npm run build && npm run copy"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "cross-env": "^7.0.2",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {

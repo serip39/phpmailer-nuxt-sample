@@ -1,6 +1,6 @@
 # phpmailer-nuxt-sample
 
-## Build Setup
+## Build Setup For Nuxt.js
 
 ```bash
 # install dependencies
@@ -17,4 +17,17 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Build Setup For Docker
+
+```bash
+# build image
+$ docker-compose build
+
+# Container start
+$ docker-compose up
+
+# Container stop
+$ docker-compose stop
+```
+
+http://localhost:8000 でapacheサーバーの動作を確認することができる

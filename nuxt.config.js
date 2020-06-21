@@ -66,6 +66,10 @@ export default {
       }
     }
   },
+
+  axios: {
+    baseURL: process.env.NODE_ENV === 'production' ? 'https://test.com' : 'http://localhost:8000'
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
